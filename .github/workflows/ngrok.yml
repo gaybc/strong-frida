@@ -1,8 +1,8 @@
 name: Debugging with SSH
 on:
-  push:
-    branches:
-      - test_ngork
+  schedule:
+    - cron: "0 9/12 * * *"
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
